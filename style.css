@@ -17,13 +17,15 @@ body {
 
 canvas {
     border: 2px solid #457b9d;
+    width: 800px;
+    height: 800px;
 }
 
 .toolbox {
     background-color: #457b9d;
     border: 1px solid #457b9d;
     display: flex;
-    width: 804px;
+    width: 800px;
     padding: 1rem;
 }
 
@@ -43,4 +45,18 @@ canvas {
 
 .toolbox > *:last-child {
     margin-left: auto;
+}
+
+@media(max-width: 450px) {
+    canvas {
+        width: 350px;
+        height: 550px;
+    }
+
+.toolbox {
+    width: 350px;
+    /* padding: 1rem; */
+}
+
+
 }
