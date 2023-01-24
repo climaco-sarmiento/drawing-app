@@ -13,35 +13,6 @@ let color = 'black';
 let x;
 let y;
 
-canvas.addEventListener('touchstart', (e) => {
-    isPressed = true;
-
-    x = e.offsetX;
-    y = e.offsetY;
-});
-
-canvas.addEventListener('touchend', (e) => {
-    isPressed = false;
-
-    x = undefined;
-    y = undefined;
-});
-
-canvas.addEventListener('touchmove', (e) => {
-    if(isPressed) {
-        const x2 = e.offsetX;
-        const y2 = e.offsetY;
-
-        drawCircle(x2, y2);
-        drawLine(x, y, x2, y2);
-
-        x = x2;
-        y = y2;
-    }
-});
-
-/////////////////
-
 canvas.addEventListener('mousedown', (e) => {
     isPressed = true;
 
@@ -69,7 +40,6 @@ canvas.addEventListener('mousemove', (e) => {
     }
 });
 
-/////////////////
 
 function drawCircle(x, y) {
     ctx.beginPath();

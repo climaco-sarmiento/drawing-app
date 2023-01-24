@@ -1,6 +1,6 @@
 # Drawing App - a simple DOM manipulation exercise
 
-This is a cool HTML5 canvased based drawing app that uses a JavaScript API. It is basically a simple DOM manipulation exercise that I did, following along with a tutorial. I have added support for the touch devices myself. 
+This is a cool HTML5 canvased based drawing app that uses a JavaScript API. It is basically a simple DOM manipulation exercise that I did, following along with a tutorial. 
 
 ### Links
 
